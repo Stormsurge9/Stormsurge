@@ -1,4 +1,3 @@
-```x-csharp
 // https://unity3d.com/learn/tutorials/topics/interface-essentials/tags?playlist=17090
 using UnityEngine;
 using System.Collections;
@@ -16,4 +15,3 @@ public class Unity : MonoBehaviour {
 	}
 }
 
-```
