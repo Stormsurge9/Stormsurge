@@ -1,0 +1,55 @@
+// https://unity3d.com/learn/tutorials/topics/tips/unity-tips-tricks-3?playlist=17090
+using UnityEngine;
+using UnityEditor;
+using System.Collections;
+
+[System.Serializable]
+public class MyClass {
+	public int myOtherInt;
+	public float myOtherFloat;
+}
+
+[ExecuteInEditMode]
+public class DemoScript : MonoBehaviour {
+
+	[ContextMenuItem ("Set my string","SetString")]
+	public string myString;
+
+	[HideInInspector]
+	public int myInt;
+
+	[Range (2,5)]
+	public float myFloat;
+
+	public MyClass myClass;
+
+
+	[SerializeField]
+	private float myPrivateFloat;
+
+	[ContextMenu ("Item added to Context Menu")]
+	void TestContextMenu () {
+		Debug.Log ("Context Menu");
+	}
+
+	void SetString () {
+		myString = "Olive Oyl";
+	}
+
+	[MenuItem ("CONTEXT/Rigidbody/Double Mass")]
+	static void DoubleMass (MenuCommand command) {
+		Rigidbody rb = (Rigidbody) command.context;
+		rb.mass = rb.mass * 2;
+	}
+
+	void Reset () {
+		myInt = 6;
+		myFloat = 7.7f;
+	}
+
+	[MenuItem ("Tools/3D/Set Mass")]
+	static void SetMass () {
+		Rigidbody rb = Selection.activeTransform.GetComponent<Rigidbody>();
+		rb.mass = 100.0f;
+	}
+}
