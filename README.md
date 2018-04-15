@@ -13,3 +13,7 @@
 - GameObject.tag - [ https://docs.unity3d.com/ScriptReference/GameObject-tag.html ]
 - GameObject.CompareTag - [ https://docs.unity3d.com/ScriptReference/GameObject.CompareTag.html ]
 - GameObject.SetActive - [ https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html ]
+- Mathf - [ https://docs.unity3d.com/ScriptReference/Mathf.html ]
+- Mathf.Clamp - [ https://docs.unity3d.com/ScriptReference/Mathf.Clamp.html ]
+- Object.Instantiate - [ https://docs.unity3d.com/ScriptReference/Object.Instantiate.html ]
+- Input.GetButton - [ https://docs.unity3d.com/ScriptReference/Input.GetButton.html ]
