@@ -17,3 +17,7 @@
 - Mathf.Clamp - [ https://docs.unity3d.com/ScriptReference/Mathf.Clamp.html ]
 - Object.Instantiate - [ https://docs.unity3d.com/ScriptReference/Object.Instantiate.html ]
 - Input.GetButton - [ https://docs.unity3d.com/ScriptReference/Input.GetButton.html ]
+- Collider.OnTriggerExit(Collider) - [ https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html ]
+- Random - [ https://docs.unity3d.com/ScriptReference/Random.html ]
+- Random.insideUnitSphere - [ https://docs.unity3d.com/ScriptReference/Random-insideUnitSphere.html ]
+- Collider.OnTriggerEnter(Collider) - [ https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html ]
