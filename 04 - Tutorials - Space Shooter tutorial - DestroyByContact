@@ -1,0 +1,16 @@
+// https://unity3d.com/learn/tutorials/projects/space-shooter-tutorial/creating-hazards?playlist=17147
+using UnityEngine;
+using System.Collections;
+
+public class DestroyByContact : MonoBehaviour
+{
+    void OnTriggerEnter(Collider other) 
+    {
+        if (other.tag == "Boundary")
+        {
+            return;
+        }
+        Destroy(other.gameObject);
+        Destroy(gameObject);
+    }
+}
